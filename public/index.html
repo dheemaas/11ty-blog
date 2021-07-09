@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Articulos</title>
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -59,25 +60,25 @@
     <article class="snippet">
         <img src="/assets/blog/article-5.jpg" alt="This is a test" class="snippet__image">
         <h3 class="snippet__title"><a href="/blog/2021-06-15-my-fifth-article/">My Fifth Article</a></h3>
-        <p class="snippet__meta">by <span><a href="/">ISNAV Bienes Raices</a></span> on <span>Jun 14, 2021</span></p>
+        <p class="snippet__meta">por <span>ISNAV Bienes Raices</span> en <span>Jun 14, 2021</span></p>
         <p class="snippet__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
-        <a href="/blog/2021-06-15-my-fifth-article/" class="btn btn--primary">Continue Reading</a>
+        <a href="/blog/2021-06-15-my-fifth-article/" class="btn btn--primary">Seguir Leyendo</a>
     </article>
 </li><li>
     <article class="snippet">
         <img src="/assets/blog/article-3.jpg" alt="This is a test" class="snippet__image">
         <h3 class="snippet__title"><a href="/blog/2021-05-28-my-third-article/">My Third Article</a></h3>
-        <p class="snippet__meta">by <span><a href="/">ISNAV Bienes Raices</a></span> on <span>May 27, 2021</span></p>
+        <p class="snippet__meta">por <span>ISNAV Bienes Raices</span> en <span>May 27, 2021</span></p>
         <p class="snippet__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
-        <a href="/blog/2021-05-28-my-third-article/" class="btn btn--primary">Continue Reading</a>
+        <a href="/blog/2021-05-28-my-third-article/" class="btn btn--primary">Seguir Leyendo</a>
     </article>
 </li><li>
     <article class="snippet">
         <img src="/assets/blog/article-1.jpg" alt="This is a test" class="snippet__image">
         <h3 class="snippet__title"><a href="/blog/2021-05-01-my-first-article/">My First Article</a></h3>
-        <p class="snippet__meta">by <span><a href="/">ISNAV Bienes Raices</a></span> on <span>Apr 30, 2021</span></p>
+        <p class="snippet__meta">por <span>ISNAV Bienes Raices</span> en <span>Apr 30, 2021</span></p>
         <p class="snippet__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
-        <a href="/blog/2021-05-01-my-first-article/" class="btn btn--primary">Continue Reading</a>
+        <a href="/blog/2021-05-01-my-first-article/" class="btn btn--primary">Seguir Leyendo</a>
     </article>
 </li>
 
@@ -93,6 +94,18 @@
   </svg>
     <p>© 2020 Company Name. All rights reserved.</p>
   </footer>
+
+    <script>
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", user => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
+      </script>
 
 </body>
 </html>
